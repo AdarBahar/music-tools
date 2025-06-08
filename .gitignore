@@ -277,4 +277,78 @@ sample_*/
 # Documentation build
 _build/
 _static/
-_templates/ 
+_templates/
+
+# ═══════════════════════════════════════════════════════════════════
+# Music Tools Suite - Distribution & Installation Files
+# ═══════════════════════════════════════════════════════════════════
+
+# Distribution packages (created by create_distribution.sh)
+dist/
+*.zip
+*.tar.gz
+*.tgz
+
+# Generated launcher scripts (created by install.py)
+launch_music_tools.*
+start_music_tools.*
+
+# Virtual environment created by installer
+music_tools_env/
+music-tools-env/
+venv_music_tools/
+
+# Docker-related temporary files
+.dockerignore
+docker-build/
+.docker/
+
+# Installation logs and temporary files
+install.log
+installation.log
+installer_temp/
+setup_temp/
+
+# Generated release files
+RELEASE_NOTES_*.md
+release_*/
+packages/
+
+# Platform-specific generated files
+# Windows batch files (if generated)
+*.bat.bak
+# Unix shell scripts backup
+*.sh.bak
+
+# Package manager files
+Pipfile
+Pipfile.lock
+poetry.lock
+conda-env.yml
+environment.yml
+
+# CI/CD and automation
+.github/workflows/
+.gitlab-ci.yml
+.travis.yml
+.circleci/
+azure-pipelines.yml
+
+# Deployment configurations
+deploy/
+deployment/
+k8s/
+kubernetes/
+helm/
+
+# Performance and monitoring
+*.prof
+*.profile
+performance_logs/
+monitoring/
+
+# Version and build information
+VERSION
+BUILD_INFO
+build_number.txt
+version.txt 
